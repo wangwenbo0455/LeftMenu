@@ -2,9 +2,17 @@
 应朋友邀请，写了一个侧拉菜单，可点击，也可滑动拽出，左侧菜单界面支持自定义，动画视觉效果不错.
 ![gif](https://github.com/wangwenbo0455/LeftMenu/blob/master/cehua.gif)
 把demoView 替换为自己定义的左侧界面就可以
+
+
 `    MenuView * menu = [[MenuView alloc]initWithDependencyView:self.view MenuView:demoView coverViewAlpha:0.7 isLeftGesture:YES];`
+
+
 可以执行下面的方法去唤出左侧菜单，也可以直接在屏幕中往右滑动唤出左侧菜单
+
+
 ` [self.menu show];`
+
+
 
 具体的接口信息如下
 
