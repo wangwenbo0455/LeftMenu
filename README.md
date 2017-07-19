@@ -1,6 +1,8 @@
 # LeftMenu
 应朋友邀请，写了一个侧拉菜单，可点击，也可滑动拽出，左侧菜单界面支持自定义，动画视觉效果不错.
 ![gif](https://github.com/wangwenbo0455/LeftMenu/blob/master/cehua.gif)
+
+
 把demoView 替换为自己定义的左侧界面就可以
 
 
