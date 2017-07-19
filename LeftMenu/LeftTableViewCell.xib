@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LeftTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cnq-ud-gsi">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="Ycg-eO-oJI"/>
+                            <constraint firstAttribute="height" constant="36" id="x8P-AA-Jed"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ0-cc-fea">
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="2V9-os-D4H"/>
+                            <constraint firstAttribute="height" constant="21" id="r2f-Zg-NwG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPz-UO-0ba">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="oxc-SC-Vkz"/>
+                            <constraint firstAttribute="width" constant="28" id="qeO-oc-pWB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iPz-UO-0ba" firstAttribute="leading" secondItem="AZ0-cc-fea" secondAttribute="trailing" constant="5" id="0lE-BC-GQK"/>
+                    <constraint firstItem="AZ0-cc-fea" firstAttribute="leading" secondItem="Cnq-ud-gsi" secondAttribute="trailing" constant="20" id="6Ui-vA-DWs"/>
+                    <constraint firstItem="Cnq-ud-gsi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="CCJ-0l-2zp"/>
+                    <constraint firstItem="AZ0-cc-fea" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hsi-17-Y8q"/>
+                    <constraint firstItem="iPz-UO-0ba" firstAttribute="centerY" secondItem="AZ0-cc-fea" secondAttribute="centerY" id="kWH-eW-vGW"/>
+                    <constraint firstItem="Cnq-ud-gsi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="t72-ag-F3v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="HeardImage" destination="Cnq-ud-gsi" id="sJd-x8-A5u"/>
+                <outlet property="markImage" destination="iPz-UO-0ba" id="e85-AY-Ske"/>
+                <outlet property="titleForName" destination="AZ0-cc-fea" id="1Gp-zb-tsG"/>
+            </connections>
+            <point key="canvasLocation" x="-122" y="50"/>
+        </tableViewCell>
+    </objects>
+</document>
